@@ -1,0 +1,191 @@
+1691689399568	geckodriver	INFO	Listening on 127.0.0.1:43019
+/usr/bin/geckodriver: error: Address in use (os error 98)
+geckodriver 0.30.0 (d372710b98a6 2021-09-16 10:29 +0300) 
+WebDriver implementation for Firefox
+
+USAGE:
+    geckodriver [FLAGS] [OPTIONS]
+
+FLAGS:
+        --connect-existing    Connect to an existing Firefox instance
+    -h, --help                Prints this message
+        --jsdebugger          Attach browser toolbox debugger for Firefox
+    -v                        Log level verbosity (-v for debug and -vv for trace level)
+    -V, --version             Prints version and copying information
+
+OPTIONS:
+        --android-storage <ANDROID_STORAGE>    Selects storage location to be used for test data (deprecated). [possible
+                                               values: auto, app, internal, sdcard]
+    -b, --binary <BINARY>                      Path to the Firefox binary
+        --log <LEVEL>                          Set Gecko log level [possible values: fatal, error, warn, info, config,
+                                               debug, trace]
+        --marionette-host <HOST>               Host to use to connect to Gecko [default: 127.0.0.1]
+        --marionette-port <PORT>               Port to use to connect to Gecko [default: system-allocated port]
+        --host <HOST>                          Host IP to use for WebDriver server [default: 127.0.0.1]
+    -p, --port <PORT>                          Port to use for WebDriver server [default: 4444]
+        --websocket-port <PORT>                Port to use to connect to WebDriver BiDi [default: 9222]
+/usr/bin/geckodriver: error: Address in use (os error 98)
+geckodriver 0.30.0 (d372710b98a6 2021-09-16 10:29 +0300) 
+WebDriver implementation for Firefox
+
+USAGE:
+    geckodriver [FLAGS] [OPTIONS]
+
+FLAGS:
+        --connect-existing    Connect to an existing Firefox instance
+    -h, --help                Prints this message
+        --jsdebugger          Attach browser toolbox debugger for Firefox
+    -v                        Log level verbosity (-v for debug and -vv for trace level)
+    -V, --version             Prints version and copying information
+
+OPTIONS:
+        --android-storage <ANDROID_STORAGE>    Selects storage location to be used for test data (deprecated). [possible
+                                               values: auto, app, internal, sdcard]
+    -b, --binary <BINARY>                      Path to the Firefox binary
+        --log <LEVEL>                          Set Gecko log level [possible values: fatal, error, warn, info, config,
+                                               debug, trace]
+        --marionette-host <HOST>               Host to use to connect to Gecko [default: 127.0.0.1]
+        --marionette-port <PORT>               Port to use to connect to Gecko [default: system-allocated port]
+        --host <HOST>                          Host IP to use for WebDriver server [default: 127.0.0.1]
+    -p, --port <PORT>                          Port to use for WebDriver server [default: 4444]
+        --websocket-port <PORT>                Port to use to connect to WebDriver BiDi [default: 9222]
+1691689897857	geckodriver	INFO	Listening on 127.0.0.1:54963
+1691690386945	geckodriver	INFO	Listening on 127.0.0.1:35477
+1691690617121	geckodriver	INFO	Listening on 127.0.0.1:47091
+1691690617714	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "52647" "-no-remote" "-profile" "/tmp/rust_mozprofileQdVNEU"
+*** You are running in headless mode.
+1691690841386	geckodriver	INFO	Listening on 127.0.0.1:55091
+1691690841944	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "44181" "-no-remote" "-profile" "/tmp/rust_mozprofileYDNWc9"
+*** You are running in headless mode.
+1691691650680	geckodriver	INFO	Listening on 127.0.0.1:55379
+1691691651266	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "40627" "-no-remote" "-profile" "/tmp/rust_mozprofileLiLHMI"
+*** You are running in headless mode.
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.169361) [GFX1-]: glxtest: libpci missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.169361) |[1][GFX1-]: glxtest: libEGL missing (t=0.173034) [GFX1-]: glxtest: libEGL missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.169361) |[1][GFX1-]: glxtest: libEGL missing (t=0.173034) |[2][GFX1-]: glxtest: libGL.so.1 missing (t=0.176149) [GFX1-]: glxtest: libGL.so.1 missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.169361) |[1][GFX1-]: glxtest: libEGL missing (t=0.173034) |[2][GFX1-]: glxtest: libGL.so.1 missing (t=0.176149) |[3][GFX1-]: glxtest: libEGL missing (t=0.180384) [GFX1-]: glxtest: libEGL missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.169361) |[1][GFX1-]: glxtest: libEGL missing (t=0.173034) |[2][GFX1-]: glxtest: libGL.so.1 missing (t=0.176149) |[3][GFX1-]: glxtest: libEGL missing (t=0.180384) |[4][GFX1-]: No GPUs detected via PCI (t=0.183007) [GFX1-]: No GPUs detected via PCI
+/usr/bin/geckodriver: error: Address in use (os error 98)
+1691691956509	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "40627" "-no-remote" "-profile" "/tmp/rust_mozprofilehAsly7"
+geckodriver 0.30.0 (d372710b98a6 2021-09-16 10:29 +0300) 
+WebDriver implementation for Firefox
+
+USAGE:
+    geckodriver [FLAGS] [OPTIONS]
+
+FLAGS:
+        --connect-existing    Connect to an existing Firefox instance
+    -h, --help                Prints this message
+        --jsdebugger          Attach browser toolbox debugger for Firefox
+    -v                        Log level verbosity (-v for debug and -vv for trace level)
+    -V, --version             Prints version and copying information
+
+OPTIONS:
+        --android-storage <ANDROID_STORAGE>    Selects storage location to be used for test data (deprecated). [possible
+                                               values: auto, app, internal, sdcard]
+    -b, --binary <BINARY>                      Path to the Firefox binary
+        --log <LEVEL>                          Set Gecko log level [possible values: fatal, error, warn, info, config,
+                                               debug, trace]
+        --marionette-host <HOST>               Host to use to connect to Gecko [default: 127.0.0.1]
+        --marionette-port <PORT>               Port to use to connect to Gecko [default: system-allocated port]
+        --host <HOST>                          Host IP to use for WebDriver server [default: 127.0.0.1]
+    -p, --port <PORT>                          Port to use for WebDriver server [default: 4444]
+        --websocket-port <PORT>                Port to use to connect to WebDriver BiDi [default: 9222]
+Error: no DISPLAY environment variable specified
+1691691994579	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "40627" "-no-remote" "-profile" "/tmp/rust_mozprofilexkQ29A"
+/usr/bin/geckodriver: error: Address in use (os error 98)
+geckodriver 0.30.0 (d372710b98a6 2021-09-16 10:29 +0300) 
+WebDriver implementation for Firefox
+
+USAGE:
+    geckodriver [FLAGS] [OPTIONS]
+
+FLAGS:
+        --connect-existing    Connect to an existing Firefox instance
+    -h, --help                Prints this message
+        --jsdebugger          Attach browser toolbox debugger for Firefox
+    -v                        Log level verbosity (-v for debug and -vv for trace level)
+    -V, --version             Prints version and copying information
+
+OPTIONS:
+        --android-storage <ANDROID_STORAGE>    Selects storage location to be used for test data (deprecated). [possible
+                                               values: auto, app, internal, sdcard]
+    -b, --binary <BINARY>                      Path to the Firefox binary
+        --log <LEVEL>                          Set Gecko log level [possible values: fatal, error, warn, info, config,
+                                               debug, trace]
+        --marionette-host <HOST>               Host to use to connect to Gecko [default: 127.0.0.1]
+        --marionette-port <PORT>               Port to use to connect to Gecko [default: system-allocated port]
+        --host <HOST>                          Host IP to use for WebDriver server [default: 127.0.0.1]
+    -p, --port <PORT>                          Port to use for WebDriver server [default: 4444]
+        --websocket-port <PORT>                Port to use to connect to WebDriver BiDi [default: 9222]
+Error: no DISPLAY environment variable specified
+1691733390433	geckodriver	INFO	Listening on 127.0.0.1:36125
+1691733391037	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "42963" "-no-remote" "-profile" "/tmp/rust_mozprofileymMOFS"
+*** You are running in headless mode.
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.515744) [GFX1-]: glxtest: libpci missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.515744) |[1][GFX1-]: glxtest: libEGL missing (t=0.519336) [GFX1-]: glxtest: libEGL missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.515744) |[1][GFX1-]: glxtest: libEGL missing (t=0.519336) |[2][GFX1-]: glxtest: libGL.so.1 missing (t=0.521502) [GFX1-]: glxtest: libGL.so.1 missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.515744) |[1][GFX1-]: glxtest: libEGL missing (t=0.519336) |[2][GFX1-]: glxtest: libGL.so.1 missing (t=0.521502) |[3][GFX1-]: glxtest: libEGL missing (t=0.523436) [GFX1-]: glxtest: libEGL missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.515744) |[1][GFX1-]: glxtest: libEGL missing (t=0.519336) |[2][GFX1-]: glxtest: libGL.so.1 missing (t=0.521502) |[3][GFX1-]: glxtest: libEGL missing (t=0.523436) |[4][GFX1-]: No GPUs detected via PCI (t=0.525397) [GFX1-]: No GPUs detected via PCI
+1691735766180	geckodriver	INFO	Listening on 127.0.0.1:46951
+1691735766723	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "41455" "-no-remote" "-profile" "/tmp/rust_mozprofileTFOzjD"
+*** You are running in headless mode.
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.385464) [GFX1-]: glxtest: libpci missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.385464) |[1][GFX1-]: glxtest: libEGL missing (t=0.38779) [GFX1-]: glxtest: libEGL missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.385464) |[1][GFX1-]: glxtest: libEGL missing (t=0.38779) |[2][GFX1-]: glxtest: GLX extension missing (t=0.389504) [GFX1-]: glxtest: GLX extension missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.385464) |[1][GFX1-]: glxtest: libEGL missing (t=0.38779) |[2][GFX1-]: glxtest: GLX extension missing (t=0.389504) |[3][GFX1-]: glxtest: libEGL missing (t=0.390955) [GFX1-]: glxtest: libEGL missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.385464) |[1][GFX1-]: glxtest: libEGL missing (t=0.38779) |[2][GFX1-]: glxtest: GLX extension missing (t=0.389504) |[3][GFX1-]: glxtest: libEGL missing (t=0.390955) |[4][GFX1-]: No GPUs detected via PCI (t=0.392153) [GFX1-]: No GPUs detected via PCI
+1691738585665	geckodriver	INFO	Listening on 127.0.0.1:41475
+1691738586198	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "56507" "-no-remote" "-profile" "/tmp/rust_mozprofilefLERKi"
+*** You are running in headless mode.
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.188725) [GFX1-]: glxtest: libpci missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.188725) |[1][GFX1-]: glxtest: libEGL missing (t=0.192833) [GFX1-]: glxtest: libEGL missing
+1691742061504	geckodriver	INFO	Listening on 127.0.0.1:50941
+1691742062095	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "56843" "-no-remote" "-profile" "/tmp/rust_mozprofileKZOlmG"
+*** You are running in headless mode.
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.221811) [GFX1-]: glxtest: libpci missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.221811) |[1][GFX1-]: glxtest: libEGL missing (t=0.224691) [GFX1-]: glxtest: libEGL missing
+1691742276155	geckodriver	INFO	Listening on 127.0.0.1:42019
+1691742276767	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "42283" "-no-remote" "-profile" "/tmp/rust_mozprofilePkqSSJ"
+*** You are running in headless mode.
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.198375) [GFX1-]: glxtest: libpci missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.198375) |[1][GFX1-]: glxtest: libEGL missing (t=0.201642) [GFX1-]: glxtest: libEGL missing
+1691743477956	geckodriver	INFO	Listening on 127.0.0.1:39779
+1691743478518	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "40595" "-no-remote" "-profile" "/tmp/rust_mozprofileo4EygG"
+*** You are running in headless mode.
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libEGL missing (t=0.210544) [GFX1-]: glxtest: libEGL missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libEGL missing (t=0.210544) |[1][GFX1-]: glxtest: GLX extension missing (t=0.213223) [GFX1-]: glxtest: GLX extension missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libEGL missing (t=0.210544) |[1][GFX1-]: glxtest: GLX extension missing (t=0.213223) |[2][GFX1-]: glxtest: libEGL missing (t=0.21617) [GFX1-]: glxtest: libEGL missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libEGL missing (t=0.210544) |[1][GFX1-]: glxtest: GLX extension missing (t=0.213223) |[2][GFX1-]: glxtest: libEGL missing (t=0.21617) |[3][GFX1-]: No GPUs detected via PCI (t=0.217947) [GFX1-]: No GPUs detected via PCI
+1691743931767	geckodriver	INFO	Listening on 127.0.0.1:40173
+1691743932292	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--disable-dev-shm-usage" "--remote-debugging-port" "35043" "-no-remote" "-profile" "/tmp/rust_mozprofile9yijc4"
+*** You are running in headless mode.
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libEGL missing (t=0.272602) [GFX1-]: glxtest: libEGL missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libEGL missing (t=0.272602) |[1][GFX1-]: glxtest: GLX extension missing (t=0.275603) [GFX1-]: glxtest: GLX extension missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libEGL missing (t=0.272602) |[1][GFX1-]: glxtest: GLX extension missing (t=0.275603) |[2][GFX1-]: glxtest: libEGL missing (t=0.27768) [GFX1-]: glxtest: libEGL missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libEGL missing (t=0.272602) |[1][GFX1-]: glxtest: GLX extension missing (t=0.275603) |[2][GFX1-]: glxtest: libEGL missing (t=0.27768) |[3][GFX1-]: No GPUs detected via PCI (t=0.27935) [GFX1-]: No GPUs detected via PCI
+1691744134631	geckodriver	INFO	Listening on 127.0.0.1:52171
+1691744135191	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--disable-dev-shm-usage" "--remote-debugging-port" "50251" "-no-remote" "-profile" "/tmp/rust_mozprofileB1S3qv"
+*** You are running in headless mode.
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libEGL missing (t=0.160686) [GFX1-]: glxtest: libEGL missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libEGL missing (t=0.160686) |[1][GFX1-]: glxtest: GLX extension missing (t=0.163195) [GFX1-]: glxtest: GLX extension missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libEGL missing (t=0.160686) |[1][GFX1-]: glxtest: GLX extension missing (t=0.163195) |[2][GFX1-]: glxtest: libEGL missing (t=0.165254) [GFX1-]: glxtest: libEGL missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libEGL missing (t=0.160686) |[1][GFX1-]: glxtest: GLX extension missing (t=0.163195) |[2][GFX1-]: glxtest: libEGL missing (t=0.165254) |[3][GFX1-]: No GPUs detected via PCI (t=0.167732) [GFX1-]: No GPUs detected via PCI
+1691744403250	geckodriver	INFO	Listening on 127.0.0.1:46261
+1691744403820	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--disable-dev-shm-usage" "--remote-debugging-port" "33891" "-no-remote" "-profile" "/tmp/rust_mozprofileC2gOEd"
+*** You are running in headless mode.
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libEGL missing (t=0.124925) [GFX1-]: glxtest: libEGL missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libEGL missing (t=0.124925) |[1][GFX1-]: glxtest: GLX extension missing (t=0.126631) [GFX1-]: glxtest: GLX extension missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libEGL missing (t=0.124925) |[1][GFX1-]: glxtest: GLX extension missing (t=0.126631) |[2][GFX1-]: glxtest: libEGL missing (t=0.127974) [GFX1-]: glxtest: libEGL missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libEGL missing (t=0.124925) |[1][GFX1-]: glxtest: GLX extension missing (t=0.126631) |[2][GFX1-]: glxtest: libEGL missing (t=0.127974) |[3][GFX1-]: No GPUs detected via PCI (t=0.129631) [GFX1-]: No GPUs detected via PCI
+1691744552775	geckodriver	INFO	Listening on 127.0.0.1:45443
+1691744553403	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--disable-dev-shm-usage" "--remote-debugging-port" "53517" "-no-remote" "-profile" "/tmp/rust_mozprofileYSewha"
+*** You are running in headless mode.
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libEGL missing (t=0.119496) [GFX1-]: glxtest: libEGL missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libEGL missing (t=0.119496) |[1][GFX1-]: glxtest: GLX extension missing (t=0.121559) [GFX1-]: glxtest: GLX extension missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libEGL missing (t=0.119496) |[1][GFX1-]: glxtest: GLX extension missing (t=0.121559) |[2][GFX1-]: glxtest: libEGL missing (t=0.123715) [GFX1-]: glxtest: libEGL missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libEGL missing (t=0.119496) |[1][GFX1-]: glxtest: GLX extension missing (t=0.121559) |[2][GFX1-]: glxtest: libEGL missing (t=0.123715) |[3][GFX1-]: No GPUs detected via PCI (t=0.125152) [GFX1-]: No GPUs detected via PCI
+1691747333503	geckodriver	INFO	Listening on 127.0.0.1:37915
+1691747334134	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--disable-dev-shm-usage" "--remote-debugging-port" "36963" "-no-remote" "-profile" "/tmp/rust_mozprofileY8DKQq"
+*** You are running in headless mode.
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libEGL missing (t=0.479954) [GFX1-]: glxtest: libEGL missing

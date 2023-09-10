@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+      <div class="landing_page" style="background-image: url({% static 'parthenon_temple.jpg' %});">
+        <div class="landing_page__teaser">
+          <div class="landing_page__teaser__width-set">
+            <div class="landing_page__teaser__width-set__titles">
+              <p class="landing_page__teaser__width-set__titles__head">
+                In the late 5<span class="superscript">th</span> century BC,
+                Plato and Thucydides found their culture in crisis, forcing individuals to work out for themselves many things that had long been taken for granted.
+              </p>
+              <p class="landing_page__teaser__width-set__titles__sub">
+                This blog examines how these two ancient Greeks thought about their time, and how
+                they can help us to see more deeply into our own.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="landing_page__new-here">
+          <div class="landing_page__new-here__width-set">
+            <p class="landing_page__new-here__title">New Here?</p>
+            <p class="landing_page__new-here__text">
+              <a href="{% url 'core:single_post' 'introduction' %}" class="landing_page__new-here__link">This</a> is the
+              first post. It's a good place to start.
+            </p>
+          </div>
+        </div>
+        <div class="landing_page__posts">
+          <div class="landing_page__posts__width-set">
+            <p class="landing_page__posts__title">Latest Post</p>
+            <div class="landing_page__posts__card">
+              <a href="{% url 'core:single_post' post.slug %}" class="landing_page__posts__card__title">
+                {{ post.title }}
+              </a>
+              <div class="landing_page__posts__card__text">
+                {{ post.content|cut:"<p class='parag'>"|truncatewords:35 }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+{% endblock %}

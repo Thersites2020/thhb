@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <div class="insufficient">
+    Sorry, but user <em style="text-transform: uppercase;">{{ user.username }}</em> does not have sufficient privileges to access this page.
+  </div>
+{% endblock %}

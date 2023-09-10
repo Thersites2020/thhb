@@ -1,0 +1,62 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+      args:
+        - DEV=true
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./thhb:/thhb
+    command:
+      sh -c "python manage.py wait_for_db &&
+             python manage.py migrate &&
+             python manage.py runserver 0.0.0.0:8000"
+    environment:
+      - DB_HOST=db
+      - DB_NAME=devdb
+      - DB_USER=devuser
+      - DB_PASS=changeme
+    depends_on:
+      - db
+      - selenium_hub
+
+  db:
+    image: postgres:13-alpine
+    volumes:
+      - dev-db-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=devdb
+      - POSTGRES_USER=devuser
+      - POSTGRES_PASSWORD=changeme
+    ports:
+        - "6543:5432"
+
+  selenium_hub:
+    container_name: selenium_hub
+    image: selenium/hub:4.11.0-20230801
+    shm_size: 2gb
+    ports:
+      - "4442:4442"
+      - "4443:4443"
+      - "4444:4444"
+
+  firefox:
+    image: selenium/node-firefox:4.11.0-20230801
+    shm_size: 2gb
+    depends_on:
+      - selenium_hub
+    environment:
+      - SE_EVENT_BUS_HOST=selenium_hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+      - SE_VNC_NO_PASSWORD=1
+    ports:
+      - 5900:5900
+      - 7900:7900
+
+volumes:
+  dev-db-data:
+

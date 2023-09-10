@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+      <div class="blogpost-list-container">
+        <div class="blogposts-title">List of Posts</div>
+        <div class="card-container">
+        {% for post in posts %}
+          <div class="blogpost-card">
+            <a href="{% url 'core:single_post' post.slug %}" class="blogpost-card__title">
+              {{ post.title }}
+            </a>
+            <div class="blogpost-card__date">{{ post.pub_date|date:"F d, Y" }}</div>
+            <img
+              src="{{ post.image.url }}"
+              alt="{{ post.image_alt }}"
+              class="blogpost-card__image"
+            />
+            <div class="blogpost-card__opening-words">
+              {{ post.content|cut:"<p class='parag'>"|truncatewords:20 }}
+            </div>
+          </div>
+        {% endfor %}
+          </div>
+       </div>
+{% endblock %}

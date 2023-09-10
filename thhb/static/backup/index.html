@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+      <div class="landing_page" style="background-image: url({% static 'parthenon_temple.jpg' %});">
+        <div class="landing_page__teaser">
+          <div class="landing_page__teaser__width-set">
+            <div class="landing_page__teaser__width-set__titles">
+              <p class="landing_page__teaser__width-set__titles__head">
+                In the late 5<span class="superscript">th</span> century BC,
+                Plato and Thucydides found their culture in crisis, producing a
+                time of new possibilities - and new dangers.
+              </p>
+              <p class="landing_page__teaser__width-set__titles__sub">
+                This blog examines how they understood their situation, and how
+                they can help us to see more deeply into our own.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="landing_page__posts">
+          <div class="landing_page__posts__card">
+            Introduction
+            <img
+              src="{% static 'Three_Columns_D.jpg' %}"
+              alt="A Column"
+              class="landing_page__posts__card__image"
+            />
+            <div class="landing_page__posts__card__subtitle">
+              Start here if this is all new to you
+            </div>
+          </div>
+          <div class="landing_page__posts__card">
+            Latest Post
+            <img
+              src="{% static 'Three_Columns_H.jpg' %}"
+              alt="A Column"
+              class="landing_page__posts__card__image"
+            />
+            <div class="landing_page__posts__card__subtitle">
+              A brief summary of the article
+            </div>
+          </div>
+        </div>
+      </div>
+{% endblock %}

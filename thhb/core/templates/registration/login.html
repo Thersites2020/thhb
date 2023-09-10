@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Spectral"
+    />
+    <link rel="stylesheet" href="{% static 'temporary_pages.css' %}" />
+    <title>This Has Happened Before</title>
+    <link rel="icon" type="image/ico" href="{% static 'ColumnDrawing.ICO' %}" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-text">
+        Log In
+      </div>
+      <form method="post" class="login-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="login-btn">Log In</button>
+      </form>
+    </div>
+  </body>
+</html>

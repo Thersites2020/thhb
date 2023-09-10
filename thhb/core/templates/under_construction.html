@@ -1,0 +1,23 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>This Has Happened Before</title>
+  <link rel="icon" type="image/ico" href="{% static 'ColumnDrawing.ICO' %}" />
+  <link rel="stylesheet" href="{% static 'temporary_pages.css' %}" />
+</head>
+<body style="background-image: url({% static 'under_construction.jpeg' %});">
+  <div class="container">
+    <div class="main-text">
+    This site is under construction.</div>
+    <div class="main-text"> It is not likely to be open for quite some time yet...
+    </div>
+    <div class="sub-text">Those authorised to look around within are invited to sign in.</div>
+    <a href="{% url 'login' %}" class="login-btn">
+      Sign In
+    </a>
+  </div>
+</body>
+</html>

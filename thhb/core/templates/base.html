@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Spectral"
+    />
+    <link rel="stylesheet" href="{% static 'thhb.css' %}" />
+    <title>This Has Happened Before</title>
+    <link rel="icon" type="image/ico" href="{% static 'ColumnDrawing.ICO' %}" />
+  </head>
+  <body>
+  {% if user.is_authenticated %}
+    <div class="usernav">
+      <a href="{% url 'core:user_page' %}" class="usernav__username">{{ user.username }}</a>
+      <a href="{% url 'logout' %}" class="usernav__logout">Logout</a>
+    </div>
+  {% endif %}
+    <div class="whole-page">
+      <div class="header">
+        <div class="header__main">
+          <div class="header__title">
+            <a href="{% url 'core:home' %}" class="header__title">This Has Happened Before</a>
+          </div>
+          <div class="header__subtitle">
+            Ancient Athens' Cultural Crisis and Our Own
+          </div>
+        </div>
+        <div class="subheader">
+          <div class="subheader__content">
+            <a href="{% url 'core:single_post' 'introduction' %}" class="subheader__item">Introduction</a>
+            <a href="{% url 'core:single_post' 'the-book' %}" class="subheader__item">The Book</a>
+            <a href="{% url 'core:post_list' %}" class="subheader__item">Posts</a>
+            <a href="#" class="subheader__item">Related Writing</a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        {% block content %}
+        {% endblock %}
+      </div>
+    </div>
+  </body>
+</html>

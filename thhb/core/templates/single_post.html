@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+      <div class="main">
+        <div class="article-top">
+          {% if user.is_authenticated and user.write_access %}
+            <a href="{% url 'core:update_post' blog_post.slug %}" class="article-top__btn btn">Edit Post</a>
+          {% endif %}
+          <div class="article-top__title">
+            {{ blog_post.title }}
+            <div class="article-top__subtitle">
+              {{ blog_post.subtitle }}
+            </div>
+          </div>
+          <div class="article-top__pubinfo">
+            <div class="article-top__pubinfo__name">{{ blog_post.author }}</div>
+            <div class="article-top__pubinfo__date">{{ blog_post.pub_date|date:"F d, Y" }}</div>
+          </div>
+          <img
+            src="{{ blog_post.image.url }}"
+            alt="{{ blog_post.image_alt }}"
+            class="article-top__image"
+          />
+        </div>
+        {{ blog_post.content | safe }}
+        <p class="parag word_count">Word Count: {{ word_count }}</p>
+      </div>
+{% endblock %}

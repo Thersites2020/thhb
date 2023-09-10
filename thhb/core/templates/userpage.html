@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+      <div class="userpage">
+        <div class="userpage__title">
+          User Page for <em class="userpage__name">{{ user.username }}</em>
+        </div>
+          <a href="{% url 'logout' %}" class="userpage__btn btn">Logout</a>
+        {% if user.write_access %}
+          <div href="#" class="userpage__write-access">Write Access</div>
+          <a href="{% url 'core:create_post' %}" class="userpage__btn btn">Create New Post</a>
+          <a href="{% url 'password_change' %}" class="userpage__btn btn">Change Password</a>
+        {% else %}
+          <div class="userpage__write-access">No Write Access</div>
+          <div class="userpage__write-access">Cannot write or edit posts</div>
+          <div class="userpage__write-access">Cannot change password</div>
+        {% endif %}
+      </div>
+
+{% endblock %}

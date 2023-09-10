@@ -1,0 +1,40 @@
+[
+{
+    "model": "accounts.customuser",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$2EQy1KKmQlB0cEmwZFMWrO$3c3CBA2hfYRNU9LaWgCchA6I/Pzrsm6EGOeci7xt1Wc=",
+        "last_login": "2023-09-07T17:38:29.630Z",
+        "is_superuser": false,
+        "username": "testuser",
+        "first_name": "Test",
+        "last_name": "User",
+        "email": "testuser@blerg.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-08-20T08:27:33Z",
+        "write_access": true,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.customuser",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$PUtVqWGEbpVL50Tl1BmXfr$Z2TJoS0QsIYc/XwrkwknUxuVI4oKYVno5pBBdFRs7Wc=",
+        "last_login": "2023-09-08T08:38:29.548Z",
+        "is_superuser": false,
+        "username": "guest",
+        "first_name": "",
+        "last_name": "",
+        "email": "NA@notanemailaddress.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-08-20T12:17:54Z",
+        "write_access": false,
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]

@@ -1,0 +1,50 @@
+[
+{
+    "model": "core.blogpost",
+    "pk": 1,
+    "fields": {
+        "title": "Introduction",
+        "slug": "introduction",
+        "subtitle": "A First Look at How Plato and Thucydides Provide Perspective on the Contemporary West",
+        "author": "Nicholas Thorne",
+        "image": "static/img/Three_Columns_D.jpg",
+        "image_alt": "Three Greek Columns",
+        "pub_date": "2023-08-18",
+        "last_updated": "2023-09-03T08:46:51.722Z",
+        "category": "MN",
+        "content": "<p class='parag'>This is the introduction test post. If it were a real post, there would be a lot more text here.</p>"
+    }
+},
+{
+    "model": "core.blogpost",
+    "pk": 2,
+    "fields": {
+        "title": "The Book",
+        "slug": "the-book",
+        "subtitle": "NA",
+        "author": "Nicholas Thorne",
+        "image": "static/img/thebook.png",
+        "image_alt": "Cover of Liberation and Authority",
+        "pub_date": "2023-08-19",
+        "last_updated": "2023-09-03T08:40:59.211Z",
+        "category": "OT",
+        "content": "<p class='parag'>This blog is based on a book I published in 2021. This is the test post related to that book.</p>"
+    }
+},
+{
+    "model": "core.blogpost",
+    "pk": 3,
+    "fields": {
+        "title": "A Second Post",
+        "slug": "a-second-post",
+        "subtitle": "OR, How the Titanic Helps Us Understand Plato & Thucydides",
+        "author": "Nicholas Thorne",
+        "image": "static/img/Titanic_sinking.jpg",
+        "image_alt": "The Titanic Sinking",
+        "pub_date": "2023-08-23",
+        "last_updated": "2023-09-03T08:46:11.180Z",
+        "category": "MN",
+        "content": "<p class='parag'>This is a second test blog post.</p>"
+    }
+}
+]

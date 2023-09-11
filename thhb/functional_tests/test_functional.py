@@ -50,7 +50,7 @@ class HomePageVisitTest(TestCase):
 
         # User is now on login page
         main_text = self.firefox.find_element(By.CLASS_NAME, "main-text")
-        self.assertIn("Log In", main_text.text);
+        self.assertIn("Log In", main_text.text)
 
         # User enters text in Username input
         username = self.firefox.find_element(By.NAME, "username")
